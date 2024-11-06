@@ -19,21 +19,6 @@ import java.util.function.Predicate;
 public class FilteringApples {
 
 
-    public static void main(String[] args) {
-        // inventory 存货，库存的意思
-        List<Apple> inventory = Arrays.asList(new Apple(80, "green"),
-                new Apple(155, "green"),
-                new Apple(120, "red"));
-//        Apple greenApple = inventory.stream().filter(apple -> apple.getColor().equals("green")).findFirst().get();
-//        log.info("greenApple color: {}", greenApple);
-
-        // [Apple{color='green', weight=80}, Apple{color='green', weight=155}]
-        List<Apple> greenApples = filterApples(inventory,FilteringApples::isGreenApple);
-        log.info("Filtering greenApples in inventory: {}", greenApples);
-
-
-    }
-
     public static List<Apple> filterGreenApples(List<Apple> inventory) {
         List<Apple> result = new ArrayList<>();
         for (Apple apple : inventory) {

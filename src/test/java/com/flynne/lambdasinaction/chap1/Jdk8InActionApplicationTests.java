@@ -1,4 +1,4 @@
-package com.flynne.jdk8inaction;
+package com.flynne.lambdasinaction.chap1;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
